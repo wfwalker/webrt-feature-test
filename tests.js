@@ -49,8 +49,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://developer.mozilla.org/en-US/docs/HTML/Canvas'
   },
   {
     id: 'payments',
@@ -62,8 +63,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/WebPaymentProvider'
   },
   {
     id: 'apps',
@@ -75,8 +77,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://developer.mozilla.org/en-US/docs/Apps/Apps_JavaScript_API#Management_API'
   },
   {
     id: 'device orientation',
@@ -88,8 +91,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/deviceorientation'
   },
   {
     id: 'alarm',
@@ -101,8 +105,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/AlarmAPI'
   },
   {
     id: 'backgroundservice',
@@ -114,8 +119,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: ''
   },
   {
     id: 'bluetooth',
@@ -127,8 +133,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/WebBluetooth'
   },
   {
     id: 'browser',
@@ -140,7 +147,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P3',
     area: 'Core'
   },
   {
@@ -153,8 +160,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://developer.mozilla.org/en-US/docs/DOM/Using_the_Camera_API'
   },
   {
     id: 'contacts',
@@ -166,8 +174,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/ContactsAPI'
   },
   {
     id: 'desktop-notification',
@@ -179,7 +188,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P1',
     area: 'Core'
   },
   {
@@ -192,8 +201,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/Security/DeviceStorage'
   },
   {
     id: 'fmradio',
@@ -205,8 +215,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P3',
+    area: 'Core', 
+    info: 'https://wiki.mozilla.org/WebAPI/Security/FMRadioAPI'
   },
   {
     id: 'geolocation',
@@ -218,8 +229,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'http://dev.w3.org/geo/api/spec-source.html'
   },
   {
     id: 'mobileconnection',
@@ -231,8 +243,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P2',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/WebMobileConnection'
   },
   {
     id: 'power',
@@ -244,8 +257,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P2',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/PowerManagementAPI'
   },
   {
     id: 'push',
@@ -257,8 +271,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/PushAPI'
   },
   {
     id: 'settings',
@@ -270,8 +285,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P2',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/SettingsAPI'
   },
   {
     id: 'sms',
@@ -283,8 +299,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: 'https://wiki.mozilla.org/WebAPI/WebSMS'
   },
   {
     id: 'storage',
@@ -296,7 +313,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P1',
     area: 'Core'
   },
   {
@@ -309,7 +326,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P3',
     area: 'Core'
   },
   {
@@ -322,7 +339,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P1',
     area: 'Core'
   },
   {
@@ -335,7 +352,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P2',
     area: 'Core'
   },
   {
@@ -348,8 +365,9 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core',
+    info: "https://wiki.mozilla.org/WebAPI/Security/WebTelephony"
   },
   {
     id: 'wake-lock-screen',
@@ -361,7 +379,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P1',
     area: 'Core'
   },
   {
@@ -374,7 +392,7 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
+    impact: 'P1',
     area: 'Core'
   },
   {
@@ -387,7 +405,8 @@ var tests = [
         return { output: 'Failed', emulated: 'No' };
       }
     },
-    impact: 'Critical',
-    area: 'Core'
+    impact: 'P1',
+    area: 'Core', 
+    info: 'https://wiki.mozilla.org/WebAPI/Security/Wifi'
   }
 ];
