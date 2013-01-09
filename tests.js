@@ -99,7 +99,7 @@ var tests = [
     id: 'alarm',
     name: 'alarm',
     run: function () {
-      if ('alarm' in navigator) {
+      if ('mozAlarms' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -127,7 +127,7 @@ var tests = [
     id: 'bluetooth',
     name: 'bluetooth',
     run: function () {
-      if ('bluetooth' in navigator) {
+      if ('mozBluetooth' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -154,7 +154,7 @@ var tests = [
     id: 'camera',
     name: 'camera',
     run: function () {
-      if ('camera' in navigator) {
+      if ('mozCameras' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -168,7 +168,7 @@ var tests = [
     id: 'contacts',
     name: 'contacts',
     run: function () {
-      if ('contacts' in navigator) {
+      if ('mozContacts' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -209,7 +209,7 @@ var tests = [
     id: 'fmradio',
     name: 'fmradio',
     run: function () {
-      if ('fmradio' in navigator) {
+      if (('mozFM' in navigator) || ('mozFMRadio' in navigator)) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -237,7 +237,7 @@ var tests = [
     id: 'mobileconnection',
     name: 'mobileconnection',
     run: function () {
-      if ('mobileconnection' in navigator) {
+      if ('mozMobileConnection' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -249,9 +249,9 @@ var tests = [
   },
   {
     id: 'power',
-    name: 'power',
+    name: 'mozPower',
     run: function () {
-      if ('power' in navigator) {
+      if ('mozPower' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -260,6 +260,20 @@ var tests = [
     impact: 'P2',
     area: 'Core',
     info: 'https://wiki.mozilla.org/WebAPI/PowerManagementAPI'
+  },
+  {
+    id: 'power',
+    name: 'battery',
+    run: function () {
+      if ('battery' in navigator) {
+        return { output: 'Success', emulated: '' };
+      } else {
+        return { output: 'Failed', emulated: 'No' };
+      }
+    },
+    impact: 'P2',
+    area: 'Core',
+    info: 'https://developer.mozilla.org/en-US/docs/DOM/window.navigator.battery'
   },
   {
     id: 'push',
@@ -279,7 +293,7 @@ var tests = [
     id: 'settings',
     name: 'settings',
     run: function () {
-      if ('settings' in navigator) {
+      if ('mozSettings' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -293,7 +307,7 @@ var tests = [
     id: 'sms',
     name: 'sms',
     run: function () {
-      if ('sms' in navigator) {
+      if ('mozSms' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -373,7 +387,7 @@ var tests = [
     id: 'wake-lock-screen',
     name: 'wake-lock-screen',
     run: function () {
-      if ('wake-lock-screen' in navigator) {
+      if ('wakeLockScreen' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
