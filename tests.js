@@ -109,6 +109,7 @@ var tests = [
     area: 'Core',
     info: 'https://wiki.mozilla.org/WebAPI/AlarmAPI'
   },
+  // MISSING --------------------------------------------
   {
     id: 'backgroundservice',
     name: 'backgroundservice',
@@ -182,7 +183,7 @@ var tests = [
     id: 'desktop-notification',
     name: 'desktop-notification',
     run: function () {
-      if ('desktop-notification' in navigator) {
+      if ('mozNotification' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -334,7 +335,7 @@ var tests = [
     id: 'systemclock',
     name: 'systemclock',
     run: function () {
-      if ('systemclock' in navigator) {
+      if ('mozTime' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -360,7 +361,7 @@ var tests = [
     id: 'network-tcp',
     name: 'network-tcp',
     run: function () {
-      if ('network-tcp' in navigator) {
+      if ('mozTCPSocket' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
@@ -413,7 +414,7 @@ var tests = [
     id: 'wifi',
     name: 'wifi',
     run: function () {
-      if ('wifi' in navigator) {
+      if ('mozWifiManager' in navigator) {
         return { output: 'Success', emulated: '' };
       } else {
         return { output: 'Failed', emulated: 'No' };
